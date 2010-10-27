@@ -1,0 +1,45 @@
+h1. Bank Accounts
+A simple code kata illustrating behaviour driven development and teh use of mock objects
+
+h2. Background
+The problem to be solved is of a transaction between two bank accounts, a client system will create a new transaction specifying the source, destination and amount of money to be transferred.
+
+* In the happy-path case money will be deducted from the source account and credited to the destination account.
+* Where the source account has insufficient funds the transaction will fail with a descriptive exception.
+* _Optional: Where the destination account is frozen the transaction will fail with a different descriptive exception._
+* _Optional: Introduce different currencies and an exchange rate lookup service_
+                                 
+h2. Steps
+The first test plays the part of the client
+
+# A transaction should debit money from one account and credit to another account
+## Instantiate a new Transaction instance with no parameters (RED: compile fails)
+## Use the IDE to create a new production class for Transaction (GREEN: compiles)
+## Create two mock instances of Account {{account1}} and {{account2}} (RED: compile fails)
+## Use the IDE to create the Account interface (GREEN: compiles)
+## Add parameters to the Transaction constructor (account1, account2, float amount) (RED: compile fails)
+## Use the IDE to change the Transaction constructor to meet the new signature (GREEN: compiles)
+## Add a call the Transaction instance execute() (RED: compile fails)
+## Use the IDE to generate the new execute() method on Transaction (GREEN: compiles)
+## Add expectations to {{account1}} to receive a debit request for {{amount}} (RED: compile fails)
+## Use the IDE to add a debit method to the account interface (RED: test fails, mock expectations not met)
+## Write code in Transaction.execute() (GREEN: test passes)
+## Add expectations to {{account2}} to receive a credit request for {{amount}} (RED: compile fails)
+## Use the IDE to add a credit method to the account interface (RED: test fails, mock expectations not met)
+## Write code in Transaction.execute() (GREEN: test passes)
+
+Is the feature complete? We still need to implement the Account interface for real.
+# A new test class for Account (TDD with assertions)
+## When debit is called the balance should drop by the correct amount (a new method getBalance() is implied)
+## When credit is called the balance should increase by the correct amount
+
+Back in the top-level test class write a new test method
+## Add the @Expected annotation with the appropriate exception
+## Create a new mock instance {{poorAccount}} (RED: test fails, mock expectations not met)
+## Add the expectation that when balance() is called it returns 0 (RED: test fails, mock expectations not met)
+## Create a new mock instance {{account2}} with no expected method calls (RED: test fails, mock expectations not met)
+## Create a new instance of Transaction, passing in (poorAccount, account2, 10) (RED: test fails, mock expectations not met)
+## Add a call the Transaction instance execute() wrap in try/catch with fail() (RED: test fails, mock expectations not met)
+## Add code to Transaction.execute() to check the balance of the source account, but do nothing with it (RED: two tests fail,mock expectations not met)
+## Add expectation to first test (RED: test fails, expected exception not thrown)
+## Add code to Transaction.execute() to throw the appropriate exception if the balance is insufficient (GREEN: tests pass)

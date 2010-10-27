@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build/classes/main" path="src/main/java"/>
+	<classpathentry kind="src" output="build/classes/test" path="src/test/java"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/junit/junit/jars/junit-4.8.1.jar" sourcepath="GRADLE_CACHE/junit/junit/sources/junit-4.8.1-sources.jar"/>
+	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.jmock/jmock/jars/jmock-2.5.1.jar" sourcepath="GRADLE_CACHE/org.jmock/jmock/sources/jmock-2.5.1-sources.jar"/>
+	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-library/jars/hamcrest-library-1.1.jar" sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-library/sources/hamcrest-library-1.1-sources.jar"/>
+	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar" sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-core/sources/hamcrest-core-1.1-sources.jar"/>
+	<classpathentry kind="var" path="GRADLE_CACHE"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
