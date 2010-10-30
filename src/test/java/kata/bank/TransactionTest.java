@@ -7,12 +7,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(JMock.class)
-public class TransactionStoriesTest {
+public class TransactionTest {
   Mockery context = new Mockery();
   
   @Test public void aTransactionShouldDebitMoneyFromOneAccountAndCreditToAnotherAccount() throws InsufficientFundsException {
     final Account fromAccount = context.mock(Account.class);
-    final Account toAccount = context.mock(Account.class, "toAccount");
+    // Need to name the mock or jMock defaults to the classname and complains of duplicate definitions
+    final Account toAccount = context.mock(Account.class, "toAccount"); 
     Transaction txn = new Transaction(fromAccount, toAccount, 10.0);
     context.checking(new Expectations() {{
       oneOf (fromAccount).getBalance(); will(returnValue(10.0));
