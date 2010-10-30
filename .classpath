@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="build/classes/main" path="src/main/java"/>
-	<classpathentry kind="src" output="build/classes/test" path="src/test/java"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/junit/junit/jars/junit-4.8.1.jar" sourcepath="GRADLE_CACHE/junit/junit/sources/junit-4.8.1-sources.jar"/>
-	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.jmock/jmock/jars/jmock-2.5.1.jar" sourcepath="GRADLE_CACHE/org.jmock/jmock/sources/jmock-2.5.1-sources.jar"/>
-	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-library/jars/hamcrest-library-1.1.jar" sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-library/sources/hamcrest-library-1.1-sources.jar"/>
-	<classpathentry exported="true" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar" sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-core/sources/hamcrest-core-1.1-sources.jar"/>
-	<classpathentry kind="var" path="GRADLE_CACHE"/>
-	<classpathentry kind="output" path="bin"/>
+  <classpathentry kind="output" path="bin"/>
+  <classpathentry output="build/classes/main" kind="src" path="src/main/java"/>
+  <classpathentry output="build/classes/test" kind="src" path="src/test/java"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/junit/junit/sources/junit-4.8.1-sources.jar" kind="var" path="GRADLE_CACHE/junit/junit/jars/junit-4.8.1.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.jmock/jmock/sources/jmock-2.5.1-sources.jar" kind="var" path="GRADLE_CACHE/org.jmock/jmock/jars/jmock-2.5.1.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-library/sources/hamcrest-library-1.1-sources.jar" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-library/jars/hamcrest-library-1.1.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.hamcrest/hamcrest-core/sources/hamcrest-core-1.1-sources.jar" kind="var" path="GRADLE_CACHE/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.jmock/jmock-junit4/sources/jmock-junit4-2.5.1-sources.jar" kind="var" path="GRADLE_CACHE/org.jmock/jmock-junit4/jars/jmock-junit4-2.5.1.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/junit/junit-dep/jars/junit-dep-4.4.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/asm/asm-analysis/jars/asm-analysis-3.2.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.spockframework/spock-core/sources/spock-core-0.4-groovy-1.7-sources.jar" kind="var" path="GRADLE_CACHE/org.spockframework/spock-core/jars/spock-core-0.4-groovy-1.7.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/asm/asm-tree/jars/asm-tree-3.2.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/commons-cli/commons-cli/sources/commons-cli-1.2-sources.jar" kind="var" path="GRADLE_CACHE/commons-cli/commons-cli/jars/commons-cli-1.2.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/antlr/antlr/jars/antlr-2.7.7.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/asm/asm/jars/asm-3.2.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/asm/asm-util/jars/asm-util-3.2.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.codehaus.groovy/groovy-all/sources/groovy-all-1.7.2-sources.jar" kind="var" path="GRADLE_CACHE/org.codehaus.groovy/groovy-all/jars/groovy-all-1.7.2.jar" exported="true"/>
+  <classpathentry kind="var" path="GRADLE_CACHE/asm/asm-commons/jars/asm-commons-3.2.jar" exported="true"/>
+  <classpathentry sourcepath="GRADLE_CACHE/org.codehaus.groovy/groovy/sources/groovy-1.7.5-sources.jar" kind="var" path="GRADLE_CACHE/org.codehaus.groovy/groovy/jars/groovy-1.7.5.jar" exported="true"/>
+  <classpathentry output="build/classes/test" kind="src" path="src/test/groovy"/>
 </classpath>
